@@ -44,3 +44,30 @@ console.log(student.fullname);
 // let---->updated
 // const--->not updated
 // const object-keys---->updated
+
+// Problem:1
+const Product={
+    title:"Bollpen",
+    rating:4,
+    offer:5,
+    price:270,
+    isdeal:true
+};
+
+console.log(Product);
+
+console.log("absd"+123);
+
+//Problem:2
+const Profile={
+    username:"Shradha",
+    post:195,
+    follwers:569,
+    following:4,
+    isFollow:true,
+    details:"Apna-college"
+
+};
+console.log(Profile);
+console.log(typeof(Profile));
+console.log(typeof(Profile['username']));
