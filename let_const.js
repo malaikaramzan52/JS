@@ -12,8 +12,9 @@ console.log(pi);
 //let and const are block scoped
 
 {
-    let a=10;
+    
     console.log(a);
+    let a=5;
 }
 
 // console.log(a);//it thorows an error 
