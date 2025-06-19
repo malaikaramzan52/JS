@@ -138,3 +138,5 @@ let y="Hello world";
 // let z=y.split(",");
 let z=y.split("|");
 console.log(z);
+
+ 
