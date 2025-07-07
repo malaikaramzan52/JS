@@ -1,5 +1,5 @@
 //sort()
-
+//lexicographic = (alphabet + numbers + symbols) as strings
 let fruits=['Mango','Orange','Banana','Grapes','Kiwi','strawberry','apple'];
 let fruit=fruits.sort();
 let f=fruits.reverse();
@@ -17,3 +17,37 @@ let sort=months.toSorted();
 //  keeping the original array unchanged, while the last method alters the original array.
 
 let rev=months.toReversed();
+
+let numbers=[1,2,4,5,7,9,0,10];
+numbers.sort((a,b)=>a-b);
+console.log(numbers);
+
+let people=[
+    {
+    fullname :'ALi Ikram',
+    age : 12,
+    GPA : 2.7
+},
+ {
+    fullname :'Ubaid',
+    age : 16,
+    GPA : 3.2
+
+} ,
+{
+    fullname :'Asim',
+    age : 42,
+    GPA : 4.00
+
+} ,
+{
+    fullname :'Mohsin',
+    age : 21,
+    GPA : 3.77
+
+}];
+// people.sort((a,b)=>a.age-b.age);
+//localCompare 
+people.sort((a, b) => a.fullname.localeCompare(b.fullname));
+
+console.log(people);
