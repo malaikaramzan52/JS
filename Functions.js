@@ -14,7 +14,7 @@ function myFunction(){
 }
 myFunction();
 
-function para(msg ,n){
+function para(msg,n){
     console.log(msg);
 }
 //varaible does not have value will be undefined
