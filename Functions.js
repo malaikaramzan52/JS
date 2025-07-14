@@ -54,11 +54,48 @@ function toCelcius(fahrenheit) {
 }
 let celsius = toCelcius(100);
 // console.log(celsius); // Output: 37.77777777777778
+
 console.log(`Fahrenheit to Celsius: ${celsius}`); // Output: Fahrenheit to Celsius: 37.77777777777778
 
 
 
 
+
+
+
+// Question_1
+
+function first(){
+    console.log("Welcome to Javascript Functions!");
+}
+//Question_2:
+//to check even or odd number
+function isEven(num) {
+    return num % 2 === 0;
+}
+let num = isEven(11);
+console.log(`Is the number even? ${num}`); // Output: Is the number even? true
+
+
+//Question_3:
+//to count characters in a string
+function countChars(s){
+    let count = 0;
+    for(let c of s){
+        count++;
+    }
+    return count;
+}
+//Question_4:
+function capitalize(a) {
+    let Capitalized = a.charAt(0).toUpperCase() + a.slice(1);
+    return Capitalized;
+}
+
+//Question_5:
+function reverseString(x){
+    return x.split('').reverse().join('');
+}
 //Practice Questions
 function countVowels(str){
     let count=0;
@@ -69,3 +106,6 @@ function countVowels(str){
     }
     return count;
 }
+
+
+
