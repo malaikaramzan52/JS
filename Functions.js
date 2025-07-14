@@ -55,3 +55,17 @@ function toCelcius(fahrenheit) {
 let celsius = toCelcius(100);
 // console.log(celsius); // Output: 37.77777777777778
 console.log(`Fahrenheit to Celsius: ${celsius}`); // Output: Fahrenheit to Celsius: 37.77777777777778
+
+
+
+
+//Practice Questions
+function countVowels(str){
+    let count=0;
+    for(let char of str){
+      if(char==="a" || char==="e" || char==="i" || char==="o" || char==="u" || char==="A" || char==="E" || char==="I" || char==="O" || char==="U"){
+          count++;
+      }
+    }
+    return count;
+}
