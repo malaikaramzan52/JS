@@ -9,18 +9,49 @@
 //to remove redundancy
 
 
-function myFunction(){
+function myFunction() {
     console.log("Welcome to my WORLD!!!");
 }
 myFunction();
 
-function para(msg,n){
-    console.log(msg);
+function para(msg, number) {
+    console.log(msg, number);
 }
 //varaible does not have value will be undefined
 
-para("I love JS",100);
+para("I love JS", 100);
 
 //value pass to function during function definition---->parameters
 //value pass to function during function call----->arguments
 
+
+function sum(a, b) {
+    return a + b;
+}
+let result=sum(10,20);
+console.log(result); // Output: 30
+//variale a,b are local variables
+//local variables are only accessible within the function
+//The statements that written after the return statement will not be executed
+
+
+
+
+//functios-->parameters are local variables of function--->block scope
+//function parameters are not accessible outside the function
+
+
+function myFunction2(p1,p2){
+    return p1*p2;
+}
+let x= myFunction2(3,4);
+console.log(x);
+
+
+//function to celcius
+function toCelcius(fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9;
+}
+let celsius = toCelcius(100);
+// console.log(celsius); // Output: 37.77777777777778
+console.log(`Fahrenheit to Celsius: ${celsius}`); // Output: Fahrenheit to Celsius: 37.77777777777778
