@@ -19,3 +19,5 @@ function smallerNumbersThanCurrent(nums) {
 }
 const output = smallerNumbersThanCurrent(nums);
 console.log(output); 
+//Time Complexity: O(n^2) where n is the length of the input array
+//Space Complexity: O(n) for the result array
