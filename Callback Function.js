@@ -55,21 +55,70 @@ fruits.forEach(function(fruit,index){
 });
 
 //Practice question_5
-function loadProfile(callback) {
-    console.log("Loading profile..."); // Removed invalid profile access
+// function loadProfile(callback) {
+//     console.log("Loading profile..."); // Removed invalid profile access
 
-    setTimeout(function () {
-        const profile = {
-            Fullname: "Ali",
-            Age: 23
-        };
-        callback(profile); // Pass the profile to the callback
-    }, 3000);//after 3 sec
+//     setTimeout(function () {
+//         const profile = {
+//             Fullname: "Ali",
+//             Age: 23
+//         };
+//         callback(profile); // Pass the profile to the callback
+//     }, 3000);//after 3 sec
+// }
+
+// // Call loadProfile and pass an anonymous callback function
+// loadProfile(function (profile) {
+//     console.log("Profile Loaded:", profile);
+// });
+
+
+
+//callback--- a function that is passed as an argument to another function.
+
+
+// used to handle asynchronous operations:
+// 1. Reading a File
+// 2. Network requests
+// 3. Interacting with databases
+
+// "Hey, when you are done, call this next."
+
+
+function Hello(callback){
+    console.log("Hello!");
+    callback();
 }
 
-// Call loadProfile and pass an anonymous callback function
-loadProfile(function (profile) {
-    console.log("Profile Loaded:", profile);
-});
+function leave(){
+    console.log("Leave!");
+}
+
+function wait(){
+    console.log("wait!!");
+}
+
+function goodbye(){
+    console.log("GoodBye!!!");
+}
+
+Hello(wait);
+
+    function sum(callback, x, y) {
+        let output = x + y;
+        callback(output);
+    }
+
+    function printoutput(output) {
+        console.log("Sum is: " + output);
+    }
+
+    function displaypage(output) {
+        document.getElementById("myh1").textContent = "Sum is: " + output;
+    }
+
+    sum(displaypage, 10, 3);
+
+
 
 

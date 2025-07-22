@@ -26,14 +26,29 @@
     <!-- <script src="Arrow Function.js"></script> -->
     <!-- <script src="Function expression.js"></script> -->
     <!-- <script src="Self Executing Funtion.js"></script> -->
-    <script src="Callback Function.js"></script>
-
-
+    <!-- <script src="Callback Function.js"></script> -->
 
 
 </head>
 
 <body>
+<h1 id="myh1"></h1>
+<script>
+        function sum(callback, x, y) {
+        let output = x + y;
+        callback(output);
+    }
+
+    function printoutput(output) {
+        console.log("Sum is: " + output);
+    }
+
+    function displaypage(output) {
+        document.getElementById("myh1").textContent = "Sum is: " + output;
+    }
+
+    sum(displaypage, 10, 3);
+</script>
     <!-- <h1>What can javascript Do?</h1>
     <p id="demo"> Click to CHange the content.</p> -->
     <!-- <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello Javascript!!!"'>Click Me!</button>
@@ -53,7 +68,7 @@
         document.getElementById('demo').innerText="Hello world!";
     </script>
      -->
-    <h1>Heading</h1>
+
 
 </body>
 
