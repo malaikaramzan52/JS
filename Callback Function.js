@@ -104,20 +104,7 @@ function goodbye(){
 
 Hello(wait);
 
-    function sum(callback, x, y) {
-        let output = x + y;
-        callback(output);
-    }
 
-    function printoutput(output) {
-        console.log("Sum is: " + output);
-    }
-
-    function displaypage(output) {
-        document.getElementById("myh1").textContent = "Sum is: " + output;
-    }
-
-    sum(displaypage, 10, 3);
 
 
 
