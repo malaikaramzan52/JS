@@ -84,3 +84,5 @@ let mul=myarr.reduce((prev,curr)=>{
     return prev*curr;
 });
 console.log(mul);
+
+
