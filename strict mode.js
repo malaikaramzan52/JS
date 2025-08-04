@@ -31,13 +31,13 @@ z = {
     p2: 20
 };
 //delete operator only works on object properties, not on variables declared with let, const, or var.
-// delete z;
+ delete z;
 //it throws an error.
 //Deleting a variable (or object) is not allowed.
 //Deleting a function is not allowed.
 //Duplicating a parameter name is not allowed.
 //octal literals are not allowed.
-// let r= 010;           //this will cause an error.
+ let r= 010;           //this will cause an error.
 //octal escape characters are not allowd.
 let w= "\000";
 //writing to only read only property is no t allowed.
