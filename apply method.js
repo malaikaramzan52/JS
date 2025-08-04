@@ -27,7 +27,7 @@ const mySelf={
 greet.apply(mySelf,["Multan","Pakistan"]);
 //Example_04
 const numbers=[4,9,7,8,3,2];
-
+//Math.max does not take the "this" at all . So, we set this =null, we can also set this=0, " " 
 const maxNum =Math.max.apply(null,numbers);
 const minNum =Math.min.apply(null,numbers);
 
