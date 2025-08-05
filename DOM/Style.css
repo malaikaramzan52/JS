@@ -1,20 +1,8 @@
-body{
-    background-color:pink;
-}
-.box{
-    height:100px;
-    width:100px;
-    background-color:blanchedalmond;
-    text-align:center;
-    border:1px solid black;
-    margin:5px;
-}
-
 h1{
-    background-color:yellow;
-    color:blue;
+    text-align:center;
+    padding-top:20px;
 }
-button{
-    background-color: blue;
-    color:white
+img{
+    width:100px;
+    height:100px;
 }

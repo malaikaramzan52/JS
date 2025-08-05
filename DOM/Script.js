@@ -10,3 +10,13 @@ for(let div of divs){
     idx++;
 }
 console.dir(divs);
+
+let heading = document.getElementById("header").innerText;
+console.dir(heading);
+//remove
+let p=document.getElementById("parent").innerText;
+console.dir(p);
+let c=document.getElementById("child").innerText;
+console.dir(c);
+let remove =header.removeChild(child);
+console.dir(remove);
