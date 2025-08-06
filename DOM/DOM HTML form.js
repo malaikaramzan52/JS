@@ -16,14 +16,14 @@ function runExamples() {
 
     // innerHTML: Gets the entire HTML content
     console.log("innerHTML (para):", para.innerHTML); 
-    let parag=para.inneHTML="<i>New italic text</i>";
+    let parag=para.innerHTML="<i>New italic text</i>";
     console.log(parag);
     // Output: This is <b>paragraph</b> one.
-
+     
     // tagName: Get the name of tag
     console.log("tagName of 'title':", title.tagName); 
     // Output: H1
-
+     
     // Accessing child elements
     const firstParaInDiv = container.getElementsByTagName("p")[0];
     console.log("First paragraph in div:", firstParaInDiv.textContent); 
