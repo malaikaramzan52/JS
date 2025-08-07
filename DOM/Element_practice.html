@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+</head>
+
+<body>
+    <h1>Allah</h1>
+    <!-- Practice_question_01 -->
+    <div id="box" style="width:200px; height:100px; border:2px solid black ; background-color: lightgray;">
+        Click the button to change the color
+    </div>
+    <button onClick="changeColor()" style="margin:20px;">
+        Click Me
+    </button>
+
+    <!-- Practice Qquestion_02 -->
+    <p id="text">Click to change my color!</p>
+    <button onClick="chgColor()"> Click Me</button>
+
+    <!-- practice_question_03 -->
+    <p id="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, deserunt!</p>
+    <button onClick="addNew()">Click to add new Paragraph</button>
+
+    <!-- Practice_question_04 -->
+    <div id="removed" style="margin:10px;">I will removed when you click the button</div>
+    <button onClick="toremove()" style="margin:10px;">Remove</button>
+
+    <!-- Practice_question_05 -->
+    <div id="card" styel="padding:10px; border:1px solid black;">
+        <h3 id="title">My Card</h3>
+        <p id="des">This is myCard description.</p>
+    </div>
+    <button onClick="Change()">Change Content</button>
+
+    <!-- Practice_question_6 -->
+    <p id="para">This is the pragraph that can be hidden or shown</p>
+    <button onClick="togglepara()">Hide/Show</button>
+
+    <!-- Practice_question_07 -->
+    <button onClick="countClicks()">Click me</button>
+    <p id="counter">Clicked 0 times</p>
+
+    <!-- Practice_question_08 -->
+    <img id="myImage" src="random.webp" style="width:100px; height:100px; border:solid 1px black;" />
+    <br>
+    <button onClick="changeImage()">Change Image</button>
+    <!-- Practice question_09 -->
+    <!-- Change font size from dropdown -->
+    <p id="textSize">Change my fontSize by dropdown</p>
+    <select onChange="changefontSize(this.value)">
+        <option vakue="16px">16px</option>
+        <option vakue="24px">24px</option>
+        <option vakue="32px">32px</option>
+
+    </select>
+
+    <!-- Practice questions_10 -->
+    <!-- Add list item dynamically -->
+     <ul id="list">
+     </ul>
+     <button onClick="addItem()">Click to add item</button>
+
+    <script src="Element_practice.js"></script>
+</body>
+
+</html>
