@@ -70,3 +70,14 @@ function addItem(){
     itemCount++;
 
 }
+
+//example
+
+let button=document.getElementById("button");
+document.querySelector("body").prepend(button);
+
+let p=document.getElementsByClassName("content")[0];
+p.classList.add("newClass");
+p.classList.remove("newClass");
+//setAttribute override the properties.
+//so,we use the classList
