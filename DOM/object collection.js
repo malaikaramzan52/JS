@@ -25,3 +25,12 @@ console.log("First image alt text:", allImages[0].alt);
 let allForm =document.forms;
 console.log("Total Forms :", allForm.length);
 console.log("First form id :",allForm[1].id);
+
+//time
+document.getElementById("time").innerHTML="Date :"+ Date();
+//document.write()
+document.write(Date());
+// Never use document.write() after the document is loaded. It will overwrite the document.
+// // setTimeout(function(){
+//     document.write("This is new");
+// },2000);
