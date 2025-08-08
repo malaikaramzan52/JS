@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Form</title>
+</head>
+
+<body>
+    <h1>Allah</h1>
+    <h2>Form Validation</h2>
+    <form id="form1" onsubmit="return ValidateForm()">
+        <input type="text" name="Fullname" placeholder="Enter your fullname">
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+    <br>
+    <br>
+    <!-- Number checker from 1 to 10 -->
+     <h2>Number Validator</h2>
+    <form id="number" onsubmit="Validatenum()">
+        <input type="number" name="num" placeholder="Enter a number">
+        <button type="submit">
+          Submit
+        </button>
+
+    </form>
+    <!-- Automatic HTML Form Validation -->
+     <br>
+     <h2>Automatic HTML form Validator</h2>
+    <form id="auto">
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+    <script src="forms.js"></script>
+</body>
+
+</html>
