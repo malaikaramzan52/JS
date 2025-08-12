@@ -46,5 +46,37 @@ document.getElementById("oneTimeBtn").addEventListener("click", handleClick);
 
 //Add event listener to the window object
 window.addEventListener("resize",()=>{
-    console.log("Window resized");
-})
+    alert("Window resized");
+});
+//Passing Parameters
+let para=document.getElementById("paramBtn");
+let sum=0;
+para.addEventListener("click",function(){
+   function add(p1,p2){
+    sum=p1+p2;
+    alert("Sum is: " + sum);
+   }
+   add(5,10);
+});
+/////////////////////////////////////////////Event Bubbling///////////////////////////////////////////
+//There are two ways of event propagation in the HTML DOM:
+//Bubbling:bottom..to..up
+//first inner then outer---->addEventListener(event,function,false);
+//Capturing:top...to..down
+//first outer then inner---->addEventListener(event,function,true);
+//by default the useCapture value is false .......
+
+//Bubbling
+document.getElementById("para1").addEventListener("click",()=>{
+    alert("you click white element!");
+},false);
+document.getElementById("myDiv1").addEventListener("click",()=>{
+    alert("you click Orange element!");
+},false);
+//Capturing
+document.getElementById("para2").addEventListener("click",()=>{
+    alert("you click white element!");
+},true);
+document.getElementById("myDiv2").addEventListener("click",()=>{
+    alert("you click orange element!");
+},true);
