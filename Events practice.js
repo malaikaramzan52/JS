@@ -35,3 +35,16 @@ let multiple=document.getElementById("multibtn");
     multiple.style.backgroundColor="aqua";
  });
 //Removing eventListener
+
+//Example_07
+function handleClick() {
+    alert("This will only work once!");
+    document.getElementById("oneTimeBtn").removeEventListener("click", handleClick);
+}
+
+document.getElementById("oneTimeBtn").addEventListener("click", handleClick);
+
+//Add event listener to the window object
+window.addEventListener("resize",()=>{
+    console.log("Window resized");
+})
