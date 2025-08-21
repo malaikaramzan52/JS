@@ -149,3 +149,27 @@ const rect1=new Rectangle(5,10);
 console.log("Area of rectangle:", rect1.getArea());
 console.log("Perimeter of rectangle:", rect1.getPerimeter());
 
+//Problem_01
+let DATA = "Secrete Data";
+class User {
+    constructor(name,email){
+        this.name = name;
+        this.email = email;
+    }
+    ViewData(){
+        console.log("Data =", DATA);
+    }
+}
+let Student1= new User("John","John@gmail.com");
+let Student2= new User("Jane","Jane@gmail.com");
+//Problem_2
+class Admin extends User {
+    constructor(name,email){
+        super(name,email);
+    }
+     editData(){
+        DATA = "New Secret Data";
+     }
+}
+
+let admin1 = new Admin("admin","admin@gmail.com");

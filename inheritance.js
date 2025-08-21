@@ -140,3 +140,5 @@ document.getElementById("static").innerHTML=introduce.greet(intro);
 // //Static method can be called without creating an instance of the class
 
 // If you want to use the intro object inside the static method, you can send it as a parameter:
+
+
