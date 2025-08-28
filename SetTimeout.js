@@ -35,6 +35,7 @@ function sayHello(){
 }
 }
 const setInt = setInterval(sayHello, 2000);
+
 // | Feature          | **setTimeout()**                                                                                | **setInterval()**                                                         |
 // | ---------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 // | **Definition**   | Runs a function **once** after the given delay.                                                 | Runs a function **repeatedly** at the given interval.                     |
