@@ -85,3 +85,10 @@ getData(1, ()=>{
 });
 
 
+//Practice Examples
+async function MyFunc(){
+    return "hello";
+}
+
+MyFunc().then(result=>console.log(result));
+
