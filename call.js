@@ -68,3 +68,13 @@ sayHelloNostrict.call(myname);
 sayHelloNostrict.call(null);
 //window.name in browsers is a special property — it’s not undefined,
 // it’s actually an empty string "" by default (unless you’ve set it to something).
+
+
+//Examples
+const Student ={
+    name:"Malaika ",
+    introduce:function(){
+        console.log(`Hello I am ${this.name}`);
+    }
+}
+Student.introduce();
