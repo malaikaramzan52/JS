@@ -81,11 +81,3 @@ console.log(x);
 // -Disallows duplicate parameter names
 //  Makes eval and arguments safer
 
-// 5. ======================= Higher Order Functions ========================
-// A higher-order function is a function that takes one or more functions as arguments or returns a function.
-
-
-//Syntax:
-function higherOrderFunction(callback){
-    return callback();
-}
