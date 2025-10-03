@@ -54,3 +54,12 @@ const showAliDetails = showDetails.bind(user1,22,"Islamabad");
 showAliDetails();
 
 //Call → Call Now | Apply → Apply Now | Bind → Bind Later
+
+//Example 
+document.getElementById('add').addEventListener("click",( )=>{
+    const li = document.createElement("li");
+    const input = document.getElementById('input');
+    li.textContent=input.value;
+    document.getElementById("to-do list").appendChild(li);
+
+});
