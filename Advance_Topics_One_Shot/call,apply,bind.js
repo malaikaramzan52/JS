@@ -16,8 +16,9 @@ const person={
 // console.log(result);
 
 // Apply
-//arguments are passed an array 
+// arguments are passed an array 
 // functionName.apply(thisArg, [arg1, arg2, ...])
+//call----> use to call the function with different objects
 
 function mySelf(age,city){
     console.log(`Hello, I am ${this.name} and I am ${age} from ${city}`)
@@ -63,3 +64,24 @@ document.getElementById('add').addEventListener("click",( )=>{
     document.getElementById("to-do list").appendChild(li);
 
 });
+
+
+//Difference between with bind and without bind
+//Without Bind
+const human={
+    name:"maliaka"
+};
+function sayHello(){
+    console.log(`Hello My name is ${this.name}`);
+}
+//setTimeout(sayHello,1000);
+//This function does not display the name
+//With Bind 
+const SayHelloBind = sayHello.bind(human);
+setTimeout(SayHelloBind ,1000);
+
+
+
+
+
+
